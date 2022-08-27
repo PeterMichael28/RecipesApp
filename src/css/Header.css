@@ -1,0 +1,14 @@
+/*Navigation*/
+.navbar a {
+    color: rgba(0,0,0,.7);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+@media only Screen and (min-width:567px) {
+    .navbar a {
+        color: rgba(0,0,0,.7);
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+}

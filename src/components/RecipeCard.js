@@ -11,8 +11,8 @@ const RecipeCard = ({recipe}) => {
     }
 
   return (
-        <div className="cards">
-              <img src={recipe.image} className="" alt="..." />
+        <div className="">
+              <img src={recipe.image} className="cards-img" alt="..." />
       <div className="pt-2 px-2 pb-1">
         <p className="text-center">{res}</p>
       </div>

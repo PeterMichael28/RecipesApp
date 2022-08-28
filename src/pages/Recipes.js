@@ -15,7 +15,7 @@ const Recipes = () => {
             if (check) {
                 setData(JSON.parse(check))
             } else {
-                const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=16`)
+                const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=14a2db4a074a43588ce08f32a10d8852&number=16`)
                 const result = await api.json()
                 localStorage.setItem('Recipe', JSON.stringify(result.recipes))
                 setData(result.recipes)
@@ -28,7 +28,7 @@ const Recipes = () => {
 
   return (
     <main>
-        <SmRecipes data={data} h1='OUR RECIPES' /> 
+       {data && <SmRecipes data={data} h1='OUR RECIPES' />} 
     </main>
   )
 }

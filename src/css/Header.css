@@ -2,7 +2,7 @@
 .navbar a {
     color: rgba(0,0,0,.7);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 /* .header {
     flex-direction: column;
@@ -15,11 +15,26 @@
     width: 80%;
 }
 
+/*logo*/
+.logo {
+    width: 60px;
+}
+.logo img {
+    width: 100%;
+}
+
 /*form style*/
 .form input {
     width: 70%;
     border-radius: none;
     border: 1px solid #0d6efd;
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+    border-right: none;
+}
+.form input:focus {
+    border: 1px solid #0d6efd;
+    outline: 1px solid #0d6efd;
 }
 .form-btn {
     width: 30%;
@@ -28,6 +43,8 @@
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: .1rem;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
 }
 ::placeholder {
     font-size: .8rem;
@@ -43,6 +60,9 @@
     }
     .form-con {
         width: 80%;
+    }
+    .logo {
+        width: 90px;
     }
 }
 @media only Screen and (min-width:768px) {

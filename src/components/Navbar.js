@@ -12,7 +12,7 @@ const Navbar = () => {
             <Link to='/recipes' className='nav-link' href="#/">Recipes</Link>
         </li>
         <li className='nav-item'>
-            <a className='nav-link' href="#/">Your Liked Recipes</a>
+            <a className='nav-link' href="#/">Liked Recipes</a>
         </li>
        </ul>
     </nav>

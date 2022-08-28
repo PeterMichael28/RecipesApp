@@ -13,9 +13,9 @@ const SmRecipes = ({data, p, h1}) => {
         <div className='card-container d-flex flex-wrap align-items-center justify-content-center justify-content-sm-around justify-content-md-between w-100'>
             {data.map((recipe) => {
                 return (
-                  <Link className='cards d-flex' to={'/summary/' + recipe.id} key={recipe.id}>
-                      <RecipeCard recipe={recipe}  />
-                  </Link>
+                  <div className='cards d-flex'>
+                      <RecipeCard recipe={recipe} key={recipe.id}  />
+                  </div>
                 )
             })}
         </div>

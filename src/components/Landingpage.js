@@ -12,7 +12,7 @@ const Landingpage = () => {
                     <p>Don't worry, we have got you covered!</p>
                 </div>
                 <div>
-                <Link to='/recipes' className="btn btn-md btn-primary mt-2">EXPLORE RECIPES</Link>
+                <Link to='/RecipesApp/recipes' className="btn btn-md btn-primary mt-2">EXPLORE RECIPES</Link>
                 </div>
             </div>
             <div className="img w-100 w-md-50 mt-4 mt-md-3 mt-0 mb-5 mb-md-0">

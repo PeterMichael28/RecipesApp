@@ -31,7 +31,7 @@ const RecipeCard = ({recipe, liked}) => {
     }
 
     const clickMe = () => {
-      navigate('/summary/' + recipe.id)
+      navigate('/RecipesApp/summary/' + recipe.id)
     }
 
   return (

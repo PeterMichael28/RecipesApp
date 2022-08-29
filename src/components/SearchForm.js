@@ -7,7 +7,7 @@ const SearchForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('/search/' + input)
+    navigate('/RecipesApp/search/' + input)
     setInput('')
   }
 

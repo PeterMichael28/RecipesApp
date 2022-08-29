@@ -20,7 +20,7 @@ const SmRecipes = ({data, p, h1, liked}) => {
             })}
         </div>
         <div className='w-100 container mt-3'>
-          <Link to='/recipes' className='see-more pb-1'>{p}</Link>
+          <Link to='/RecipesApp/recipes' className='see-more pb-1'>{p}</Link>
         </div>
     </section>
   )

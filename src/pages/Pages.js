@@ -10,11 +10,11 @@ import Liked from './Liked';
 const Pages = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/recipes" element={<Recipes />} />
-      <Route path="/search/:input" element={<Search />} />
-      <Route path="/summary/:id" element={<RecipeDetails />} />
-      <Route path="/likedrecipes" element={<Liked />} />
+      <Route path="/RecipesApp" element={<Home />} />
+      <Route path="/RecipesApp/recipes" element={<Recipes />} />
+      <Route path="/RecipesApp/search/:input" element={<Search />} />
+      <Route path="/RecipesApp/summary/:id" element={<RecipeDetails />} />
+      <Route path="/RecipesApp/likedrecipes" element={<Liked />} />
     </Routes>
         
    

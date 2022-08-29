@@ -13,8 +13,8 @@ This is a recipe web application that :
 ### Tools
 It was developed using ReactJs and styled with bootstrap and Css.\
 Data were fetched from spoonacular recipe Api.\
-3) useContext was used to manage the states.
-4) And it was hosted on Github Pages.
+useContext was used to manage the states.\
+And it was hosted on Github Pages.\
 
 Api: https://api.spoonacular.com/recipes/
 

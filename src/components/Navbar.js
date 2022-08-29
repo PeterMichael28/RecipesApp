@@ -1,7 +1,10 @@
-import React from 'react'
+import { useContext } from 'react'
 import {Link} from 'react-router-dom'
+import LikedContext from '../store/liked-context'
 
 const Navbar = () => {
+
+  const LikedCtx = useContext(LikedContext)
   return (
     <nav className='navbar navbar-expand'>
        <ul className='navbar-nav'>
@@ -12,7 +15,7 @@ const Navbar = () => {
             <Link to='/recipes' className='nav-link' href="#/">Recipes</Link>
         </li>
         <li className='nav-item'>
-            <a className='nav-link' href="#/">Liked Recipes</a>
+            <Link to='/likedrecipes' className='nav-link badge-con' href="#/">Liked Recipes <span className='like-badge'>{LikedCtx.total}</span></Link>
         </li>
        </ul>
     </nav>

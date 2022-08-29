@@ -6,6 +6,10 @@
     /* min-height: 20rem; */
     /* width: 12rem; */
 }
+
+.margin-t {
+    margin-top: 8rem;
+}
 .cards {
     width: 60%;
     min-width: 220px;
@@ -86,6 +90,16 @@
         min-width: 200px;
         margin: 12px;
         margin-bottom: 17px;
+        
+    }
+    .margin-t {
+        margin-top: 12rem;
+    }
+}
+@media only screen and (min-width: 770px) {
+   
+    .margin-t {
+        margin-top: 10rem;
     }
 }
 
@@ -95,5 +109,5 @@
         margin: 13px 0;
         margin-bottom: 17px;
     }
-  
+    
 }

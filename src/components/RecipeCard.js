@@ -1,9 +1,13 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import LikedContext from '../store/liked-context';
 
-const RecipeCard = ({recipe}) => {
+const RecipeCard = ({recipe, liked}) => {
   const [like, setLike] = useState(false)
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  const LikedCtx = useContext(LikedContext);
+    const IsLiked = LikedCtx.is(recipe.id);
 
     const trunc = recipe.title.split(' ')
     let res;
@@ -15,7 +19,15 @@ const RecipeCard = ({recipe}) => {
 
     const handleClick = () => {
       setLike(!like)
-      console.log(like)
+      if (IsLiked) {
+        LikedCtx.remove(recipe.id)
+    } else {
+        LikedCtx.add({
+         id: recipe.id,
+         title: recipe.title,
+         image: recipe.image,
+        });
+    }
     }
 
     const clickMe = () => {
@@ -30,7 +42,11 @@ const RecipeCard = ({recipe}) => {
       </div>
       <div className='w-100 d-flex justify-content-center align-items center'>
 
-      <button className={`like-button ${ like ? 'active' : ''}`} onClick={handleClick}>{ like? 'Liked' : 'Like'}</button>
+     { liked? (
+        <button className={`like-button ${ like ? '' : 'active'}`} onClick={handleClick}>{ like? 'Like' : 'Liked'}</button>
+     ) :( <button className={`like-button ${ like ? 'active' : ''}`} onClick={handleClick}>{ like? 'Liked' : 'Like'}</button>)
+     
+     }
       </div>
         </div>
   )
